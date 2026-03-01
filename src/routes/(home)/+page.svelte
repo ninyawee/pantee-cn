@@ -22,6 +22,56 @@
 		</section>
 	</main>
 
+	<section id="what" class="container px-6 pb-20">
+		<div class="mx-auto max-w-3xl space-y-6 text-center">
+			<h2 class="animate-fade-up text-foreground text-2xl font-bold">What is pantee-cn?</h2>
+			<p class="animate-fade-up text-muted-foreground text-sm leading-relaxed delay-100">
+				<span class="text-foreground font-medium">pantee</span> (แผนที่) is the Thai word for
+				"map", and <span class="text-foreground font-medium">cn</span> stands for components
+				&mdash; following the
+				<a
+					href="https://ui.shadcn.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="underline underline-offset-4 hover:text-foreground">shadcn</a
+				> naming convention.
+			</p>
+			<div class="animate-fade-up mx-auto grid max-w-2xl gap-4 text-left text-sm delay-200 sm:grid-cols-2">
+				<div class="bg-card border-border rounded-lg border p-4">
+					<h3 class="text-foreground mb-1 font-semibold">Copy &amp; paste, not install</h3>
+					<p class="text-muted-foreground leading-relaxed">
+						You own the code. Copy map components into your project and customize freely &mdash; no
+						black-box dependency.
+					</p>
+				</div>
+				<div class="bg-card border-border rounded-lg border p-4">
+					<h3 class="text-foreground mb-1 font-semibold">Thailand-first defaults</h3>
+					<p class="text-muted-foreground leading-relaxed">
+						Sensible defaults for Thailand (center, bounds, language) but works anywhere in the world.
+					</p>
+				</div>
+				<div class="bg-card border-border rounded-lg border p-4 sm:col-span-2">
+					<h3 class="text-foreground mb-1 font-semibold">Built on solid foundations</h3>
+					<p class="text-muted-foreground leading-relaxed">
+						Powered by
+						<a
+							href="https://github.com/MIERUNE/svelte-maplibre-gl"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="underline underline-offset-4 hover:text-foreground">MIERUNE's svelte-maplibre-gl</a
+						>, styled with Tailwind, and designed to work seamlessly with
+						<a
+							href="https://shadcn-svelte.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="underline underline-offset-4 hover:text-foreground">shadcn-svelte</a
+						>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="why" class="container px-6 pb-16">
 		<div class="mx-auto max-w-3xl space-y-8">
 			<div class="space-y-3 text-center">
