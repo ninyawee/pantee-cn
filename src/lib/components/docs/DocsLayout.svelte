@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { setContext } from "svelte";
 	import DocsToc from "./DocsToc.svelte";
 	import { findNeighbors } from "$lib/docs-navigation";
@@ -78,7 +79,7 @@
 						variant="ghost"
 						size="sm"
 						class="-ml-2 h-auto py-2"
-						href={neighbors.previous.href}
+						href="{base}{neighbors.previous.href}"
 					>
 						<ChevronLeft />
 						{neighbors.previous.title}
@@ -88,7 +89,7 @@
 				{/if}
 
 				{#if neighbors.next}
-					<Button variant="ghost" size="sm" class="-mr-2 h-auto py-2" href={neighbors.next.href}>
+					<Button variant="ghost" size="sm" class="-mr-2 h-auto py-2" href="{base}{neighbors.next.href}">
 						{neighbors.next.title}
 						<ChevronRight />
 					</Button>

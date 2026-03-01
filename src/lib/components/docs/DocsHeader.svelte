@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { page } from "$app/state";
 	import { cn } from "$lib/utils";
 	import * as Breadcrumb from "$lib/registry/ui/breadcrumb";
@@ -11,7 +12,7 @@
 
 	const { class: className }: Props = $props();
 
-	const pathname = $derived(page.url.pathname);
+	const pathname = $derived(page.url.pathname.slice(base.length) || "/");
 
 	const activeItem = $derived.by(() => {
 		for (const group of docsNavigation) {
@@ -46,11 +47,11 @@
 		<Breadcrumb.Root>
 			<Breadcrumb.List>
 				<Breadcrumb.Item>
-					<Breadcrumb.Link href="/docs">Docs</Breadcrumb.Link>
+					<Breadcrumb.Link href="{base}/docs">Docs</Breadcrumb.Link>
 				</Breadcrumb.Item>
 				<Breadcrumb.Separator />
 				<Breadcrumb.Item>
-					<Breadcrumb.Link href={groupHref}>
+					<Breadcrumb.Link href="{base}{groupHref}">
 						{activeItem?.groupTitle ?? "Overview"}
 					</Breadcrumb.Link>
 				</Breadcrumb.Item>

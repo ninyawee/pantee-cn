@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { Button } from "$lib/registry/ui/button/index";
 	import ArrowRight from "@lucide/svelte/icons/arrow-right";
 	import CopyButton from "$lib/components/CopyButton.svelte";
@@ -62,11 +63,11 @@
 		</div>
 
 		<div class="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-3 delay-400">
-			<Button size="lg" href="/docs">
+			<Button size="lg" href="{base}/docs">
 				Get Started
 				<ArrowRight class="size-4" />
 			</Button>
-			<Button variant="ghost" size="lg" href="/docs/basic-map" class="text-muted-foreground">
+			<Button variant="ghost" size="lg" href="{base}/docs/basic-map" class="text-muted-foreground">
 				View Components
 			</Button>
 		</div>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { page } from "$app/state";
 	import { goto } from "$app/navigation";
 
@@ -11,7 +12,7 @@
 
 	const { setOpenMobile } = Sidebar.useSidebar();
 
-	const pathname = $derived(page.url.pathname);
+	const pathname = $derived(page.url.pathname.slice(base.length) || "/");
 </script>
 
 <Sidebar.Root>
@@ -33,7 +34,7 @@
 									class="text-muted-foreground font-medium"
 									onclick={() => {
 										setOpenMobile(false);
-										goto(item.href);
+										goto(base + item.href);
 									}}
 								>
 									<span class="flex items-center gap-2">
