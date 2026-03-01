@@ -23,44 +23,52 @@
 		const map = mapCtx?.getMap();
 		if (!map || !mapCtx?.isLoaded()) return;
 
-		// Add source if it doesn't exist
-		if (!map.getSource("parks")) {
-			map.addSource("parks", {
-				type: "geojson",
-				data: geojsonData,
-			});
+		function setupLayers() {
+			// Add source if it doesn't exist
+			if (!map.getSource("parks")) {
+				map.addSource("parks", {
+					type: "geojson",
+					data: geojsonData,
+				});
+			}
+
+			// Add fill layer if it doesn't exist
+			if (!map.getLayer("parks-fill")) {
+				map.addLayer({
+					id: "parks-fill",
+					type: "fill",
+					source: "parks",
+					paint: {
+						"fill-color": "#22c55e",
+						"fill-opacity": 0.4,
+					},
+					layout: {
+						visibility: isLayerVisible ? "visible" : "none",
+					},
+				});
+			}
+
+			// Add outline layer if it doesn't exist
+			if (!map.getLayer("parks-outline")) {
+				map.addLayer({
+					id: "parks-outline",
+					type: "line",
+					source: "parks",
+					paint: {
+						"line-color": "#16a34a",
+						"line-width": 2,
+					},
+					layout: {
+						visibility: isLayerVisible ? "visible" : "none",
+					},
+				});
+			}
 		}
 
-		// Add fill layer if it doesn't exist
-		if (!map.getLayer("parks-fill")) {
-			map.addLayer({
-				id: "parks-fill",
-				type: "fill",
-				source: "parks",
-				paint: {
-					"fill-color": "#22c55e",
-					"fill-opacity": 0.4,
-				},
-				layout: {
-					visibility: isLayerVisible ? "visible" : "none",
-				},
-			});
-		}
-
-		// Add outline layer if it doesn't exist
-		if (!map.getLayer("parks-outline")) {
-			map.addLayer({
-				id: "parks-outline",
-				type: "line",
-				source: "parks",
-				paint: {
-					"line-color": "#16a34a",
-					"line-width": 2,
-				},
-				layout: {
-					visibility: isLayerVisible ? "visible" : "none",
-				},
-			});
+		if (map.isStyleLoaded()) {
+			setupLayers();
+		} else {
+			map.once("style.load", setupLayers);
 		}
 
 		const handleMouseEnter = () => {
@@ -97,8 +105,12 @@
 		if (!map) return;
 
 		const visibility = isLayerVisible ? "none" : "visible";
-		map.setLayoutProperty("parks-fill", "visibility", visibility);
-		map.setLayoutProperty("parks-outline", "visibility", visibility);
+		if (map.getLayer("parks-fill")) {
+			map.setLayoutProperty("parks-fill", "visibility", visibility);
+		}
+		if (map.getLayer("parks-outline")) {
+			map.setLayoutProperty("parks-outline", "visibility", visibility);
+		}
 		isLayerVisible = !isLayerVisible;
 	}
 </script>
