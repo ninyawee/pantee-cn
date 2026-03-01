@@ -4,7 +4,7 @@
 	import ArrowRight from "@lucide/svelte/icons/arrow-right";
 	import CopyButton from "$lib/components/CopyButton.svelte";
 
-	const siteUrl = import.meta.env.PUBLIC_SITE_URL ?? "https://pantee-cn.dev";
+	const siteUrl = import.meta.env.PUBLIC_SITE_URL ?? "https://ninyawee.github.io/pantee-cn";
 	const installCommand = `npx shadcn-svelte@latest add ${siteUrl}/r/map.json`;
 </script>
 

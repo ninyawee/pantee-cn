@@ -8,7 +8,7 @@
 	import DocsCode from "$lib/components/docs/DocsCode.svelte";
 	import DocsNote from "$lib/components/docs/DocsNote.svelte";
 
-	const siteUrl = import.meta.env.PUBLIC_SITE_URL ?? "https://pantee-cn.dev";
+	const siteUrl = import.meta.env.PUBLIC_SITE_URL ?? "https://ninyawee.github.io/pantee-cn";
 
 	const installCode = `npx shadcn-svelte@latest add ${siteUrl}/r/map.json`;
 
