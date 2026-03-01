@@ -1,0 +1,1 @@
+import{J as t,d as l,b as o,K as u,e as a}from"./DubL5_2t.js";function c(n){o===null&&t(),u&&o.l!==null?s(o).m.push(n):l(()=>{const e=a(n);if(typeof e=="function")return e})}function i(n){o===null&&t(),c(()=>()=>a(n))}function s(n){var e=n.l;return e.u??={a:[],b:[],m:[]}}export{c as a,i as o};

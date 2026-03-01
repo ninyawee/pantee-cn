@@ -1,0 +1,626 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_environment.js",
+      "_internal.js"
+    ]
+  },
+  "_CodeBlock.js": {
+    "file": "chunks/CodeBlock.js",
+    "name": "CodeBlock",
+    "imports": [
+      "_index2.js",
+      "_CopyButton.js"
+    ]
+  },
+  "_ComponentPreview.js": {
+    "file": "chunks/ComponentPreview.js",
+    "name": "ComponentPreview",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_CopyButton.js"
+    ]
+  },
+  "_CopyButton.js": {
+    "file": "chunks/CopyButton.js",
+    "name": "CopyButton",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "_DocsCode.js": {
+    "file": "chunks/DocsCode.js",
+    "name": "DocsCode",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "_DocsLink.js": {
+    "file": "chunks/DocsLink.js",
+    "name": "DocsLink",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_DocsNote.js": {
+    "file": "chunks/DocsNote.js",
+    "name": "DocsNote"
+  },
+  "_DocsSection.js": {
+    "file": "chunks/DocsSection.js",
+    "name": "DocsSection",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_index-server.js",
+      "_chevron-right.js"
+    ]
+  },
+  "_GitHubButton.js": {
+    "file": "chunks/GitHubButton.js",
+    "name": "GitHubButton",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_presence-manager.svelte.js",
+      "_theme.js",
+      "_index-server.js",
+      "_events.js",
+      "_x.js"
+    ]
+  },
+  "_Map.js": {
+    "file": "chunks/Map.js",
+    "name": "Map",
+    "imports": [
+      "_index2.js",
+      "_theme.js",
+      "_docs-navigation.js",
+      "_index-server.js"
+    ]
+  },
+  "_MapControls.js": {
+    "file": "chunks/MapControls.js",
+    "name": "MapControls",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_Map.js"
+    ]
+  },
+  "_MapPopup.js": {
+    "file": "chunks/MapPopup.js",
+    "name": "MapPopup",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_Popup.js",
+      "_x.js"
+    ]
+  },
+  "_MapRoute.js": {
+    "file": "chunks/MapRoute.js",
+    "name": "MapRoute",
+    "imports": [
+      "_index2.js",
+      "_RawLayer.js"
+    ]
+  },
+  "_MarkerLabel.js": {
+    "file": "chunks/MarkerLabel.js",
+    "name": "MarkerLabel",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_index-server.js",
+      "_Map.js",
+      "_Popup.js"
+    ]
+  },
+  "_Popup.js": {
+    "file": "chunks/Popup.js",
+    "name": "Popup",
+    "imports": [
+      "_index2.js",
+      "_index-server.js",
+      "_Map.js"
+    ]
+  },
+  "_RawLayer.js": {
+    "file": "chunks/RawLayer.js",
+    "name": "RawLayer",
+    "imports": [
+      "_index2.js",
+      "_index-server.js",
+      "_Map.js",
+      "_theme.js"
+    ]
+  },
+  "_chevron-right.js": {
+    "file": "chunks/chevron-right.js",
+    "name": "chevron-right",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "_docs-navigation.js": {
+    "file": "chunks/docs-navigation.js",
+    "name": "docs-navigation",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_environment.js": {
+    "file": "chunks/environment.js",
+    "name": "environment"
+  },
+  "_equality.js": {
+    "file": "chunks/equality.js",
+    "name": "equality"
+  },
+  "_events.js": {
+    "file": "chunks/events.js",
+    "name": "events",
+    "imports": [
+      "_false.js",
+      "_index2.js",
+      "_equality.js"
+    ]
+  },
+  "_examples.js": {
+    "file": "chunks/examples.js",
+    "name": "examples"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_false.js": {
+    "file": "chunks/false.js",
+    "name": "false"
+  },
+  "_index-server.js": {
+    "file": "chunks/index-server.js",
+    "name": "index-server",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index",
+    "imports": [
+      "_index2.js",
+      "_equality.js"
+    ]
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index"
+  },
+  "_index3.js": {
+    "file": "chunks/index3.js",
+    "name": "index",
+    "imports": [
+      "_index2.js",
+      "_exports.js",
+      "_root.js",
+      "_utils.js",
+      "_index.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_root.js",
+      "_environment.js"
+    ]
+  },
+  "_navigation.js": {
+    "file": "chunks/navigation.js",
+    "name": "navigation",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "_presence-manager.svelte.js": {
+    "file": "chunks/presence-manager.svelte.js",
+    "name": "presence-manager.svelte",
+    "imports": [
+      "_index2.js",
+      "_index-server.js"
+    ]
+  },
+  "_root.js": {
+    "file": "chunks/root.js",
+    "name": "root",
+    "imports": [
+      "_index2.js",
+      "_events.js"
+    ]
+  },
+  "_shared.js": {
+    "file": "chunks/shared.js",
+    "name": "shared",
+    "imports": [
+      "_utils.js"
+    ]
+  },
+  "_theme.js": {
+    "file": "chunks/theme.js",
+    "name": "theme",
+    "imports": [
+      "_index2.js",
+      "_index.js"
+    ]
+  },
+  "_tooltip-provider.js": {
+    "file": "chunks/tooltip-provider.js",
+    "name": "tooltip-provider",
+    "imports": [
+      "_index2.js",
+      "_presence-manager.svelte.js",
+      "_events.js"
+    ]
+  },
+  "_utils.js": {
+    "file": "chunks/utils.js",
+    "name": "utils"
+  },
+  "_x.js": {
+    "file": "chunks/x.js",
+    "name": "x",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "_zap.js": {
+    "file": "chunks/zap.js",
+    "name": "zap",
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
+    "file": "remote-entry.js",
+    "name": "remote-entry",
+    "src": "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js",
+    "isEntry": true,
+    "imports": [
+      "_shared.js",
+      "_false.js",
+      "_environment.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_index3.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_false.js",
+      "_environment.js",
+      "_shared.js",
+      "_exports.js",
+      "_utils.js",
+      "_index.js",
+      "_internal.js"
+    ]
+  },
+  "src/routes/(home)/+page.svelte": {
+    "file": "entries/pages/(home)/_page.svelte.js",
+    "name": "entries/pages/(home)/_page.svelte",
+    "src": "src/routes/(home)/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_presence-manager.svelte.js",
+      "_GitHubButton.js",
+      "_Map.js",
+      "_MarkerLabel.js",
+      "_MapRoute.js",
+      "_zap.js",
+      "_navigation.js",
+      "_CopyButton.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_tooltip-provider.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.2zag6-q-.css"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "name": "entries/pages/_layout.ts",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true
+  },
+  "src/routes/docs/+layout.svelte": {
+    "file": "entries/pages/docs/_layout.svelte.js",
+    "name": "entries/pages/docs/_layout.svelte",
+    "src": "src/routes/docs/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_docs-navigation.js",
+      "_tooltip-provider.js",
+      "_presence-manager.svelte.js",
+      "_GitHubButton.js",
+      "_x.js",
+      "_index3.js",
+      "_chevron-right.js"
+    ]
+  },
+  "src/routes/docs/+page.server.ts": {
+    "file": "entries/pages/docs/_page.server.ts.js",
+    "name": "entries/pages/docs/_page.server.ts",
+    "src": "src/routes/docs/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/+page.svelte": {
+    "file": "entries/pages/docs/_page.svelte.js",
+    "name": "entries/pages/docs/_page.svelte",
+    "src": "src/routes/docs/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsLink.js",
+      "_zap.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "src/routes/docs/advanced-usage/+page.server.ts": {
+    "file": "entries/pages/docs/advanced-usage/_page.server.ts.js",
+    "name": "entries/pages/docs/advanced-usage/_page.server.ts",
+    "src": "src/routes/docs/advanced-usage/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/advanced-usage/+page.svelte": {
+    "file": "entries/pages/docs/advanced-usage/_page.svelte.js",
+    "name": "entries/pages/docs/advanced-usage/_page.svelte",
+    "src": "src/routes/docs/advanced-usage/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_DocsLink.js",
+      "_DocsNote.js",
+      "_ComponentPreview.js",
+      "_CodeBlock.js",
+      "_Map.js",
+      "_docs-navigation.js",
+      "_MapControls.js",
+      "_x.js",
+      "_MapPopup.js",
+      "_index3.js"
+    ]
+  },
+  "src/routes/docs/api-reference/+page.svelte": {
+    "file": "entries/pages/docs/api-reference/_page.svelte.js",
+    "name": "entries/pages/docs/api-reference/_page.svelte",
+    "src": "src/routes/docs/api-reference/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsNote.js",
+      "_DocsLink.js",
+      "_CodeBlock.js",
+      "_DocsCode.js",
+      "_docs-navigation.js"
+    ]
+  },
+  "src/routes/docs/basic-map/+page.server.ts": {
+    "file": "entries/pages/docs/basic-map/_page.server.ts.js",
+    "name": "entries/pages/docs/basic-map/_page.server.ts",
+    "src": "src/routes/docs/basic-map/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/basic-map/+page.svelte": {
+    "file": "entries/pages/docs/basic-map/_page.svelte.js",
+    "name": "entries/pages/docs/basic-map/_page.svelte",
+    "src": "src/routes/docs/basic-map/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_DocsLink.js",
+      "_ComponentPreview.js",
+      "_Map.js",
+      "_index-server.js",
+      "_index3.js"
+    ]
+  },
+  "src/routes/docs/clusters/+page.server.ts": {
+    "file": "entries/pages/docs/clusters/_page.server.ts.js",
+    "name": "entries/pages/docs/clusters/_page.server.ts",
+    "src": "src/routes/docs/clusters/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/clusters/+page.svelte": {
+    "file": "entries/pages/docs/clusters/_page.svelte.js",
+    "name": "entries/pages/docs/clusters/_page.svelte",
+    "src": "src/routes/docs/clusters/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_ComponentPreview.js",
+      "_Map.js",
+      "_MapControls.js",
+      "_MapPopup.js",
+      "_RawLayer.js",
+      "_index3.js"
+    ]
+  },
+  "src/routes/docs/controls/+page.server.ts": {
+    "file": "entries/pages/docs/controls/_page.server.ts.js",
+    "name": "entries/pages/docs/controls/_page.server.ts",
+    "src": "src/routes/docs/controls/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/controls/+page.svelte": {
+    "file": "entries/pages/docs/controls/_page.svelte.js",
+    "name": "entries/pages/docs/controls/_page.svelte",
+    "src": "src/routes/docs/controls/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_index3.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_ComponentPreview.js",
+      "_Map.js",
+      "_MapControls.js"
+    ]
+  },
+  "src/routes/docs/installation/+page.svelte": {
+    "file": "entries/pages/docs/installation/_page.svelte.js",
+    "name": "entries/pages/docs/installation/_page.svelte",
+    "src": "src/routes/docs/installation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_CodeBlock.js",
+      "_docs-navigation.js",
+      "_Map.js",
+      "_MapControls.js",
+      "_DocsSection.js",
+      "_DocsLink.js",
+      "_DocsCode.js",
+      "_DocsNote.js"
+    ]
+  },
+  "src/routes/docs/markers/+page.server.ts": {
+    "file": "entries/pages/docs/markers/_page.server.ts.js",
+    "name": "entries/pages/docs/markers/_page.server.ts",
+    "src": "src/routes/docs/markers/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/markers/+page.svelte": {
+    "file": "entries/pages/docs/markers/_page.svelte.js",
+    "name": "entries/pages/docs/markers/_page.svelte",
+    "src": "src/routes/docs/markers/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_DocsNote.js",
+      "_DocsLink.js",
+      "_ComponentPreview.js",
+      "_Map.js",
+      "_MarkerLabel.js",
+      "_docs-navigation.js",
+      "_Popup.js",
+      "_x.js",
+      "_navigation.js",
+      "_index3.js"
+    ]
+  },
+  "src/routes/docs/popups/+page.server.ts": {
+    "file": "entries/pages/docs/popups/_page.server.ts.js",
+    "name": "entries/pages/docs/popups/_page.server.ts",
+    "src": "src/routes/docs/popups/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/popups/+page.svelte": {
+    "file": "entries/pages/docs/popups/_page.svelte.js",
+    "name": "entries/pages/docs/popups/_page.svelte",
+    "src": "src/routes/docs/popups/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_ComponentPreview.js",
+      "_Map.js",
+      "_MapPopup.js",
+      "_docs-navigation.js",
+      "_index3.js"
+    ]
+  },
+  "src/routes/docs/routes/+page.server.ts": {
+    "file": "entries/pages/docs/routes/_page.server.ts.js",
+    "name": "entries/pages/docs/routes/_page.server.ts",
+    "src": "src/routes/docs/routes/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_examples.js"
+    ]
+  },
+  "src/routes/docs/routes/+page.svelte": {
+    "file": "entries/pages/docs/routes/_page.svelte.js",
+    "name": "entries/pages/docs/routes/_page.svelte",
+    "src": "src/routes/docs/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_DocsSection.js",
+      "_DocsCode.js",
+      "_DocsLink.js",
+      "_ComponentPreview.js",
+      "_Map.js",
+      "_MarkerLabel.js",
+      "_MapRoute.js",
+      "_docs-navigation.js",
+      "_index3.js"
+    ]
+  }
+}
