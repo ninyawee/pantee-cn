@@ -44,12 +44,6 @@
 						black-box dependency.
 					</p>
 				</div>
-				<div class="bg-card border-border rounded-lg border p-4">
-					<h3 class="text-foreground mb-1 font-semibold">Thailand-first defaults</h3>
-					<p class="text-muted-foreground leading-relaxed">
-						Sensible defaults for Thailand (center, bounds, language) but works anywhere in the world.
-					</p>
-				</div>
 				<div class="bg-card border-border rounded-lg border p-4 sm:col-span-2">
 					<h3 class="text-foreground mb-1 font-semibold">Built on solid foundations</h3>
 					<p class="text-muted-foreground leading-relaxed">
