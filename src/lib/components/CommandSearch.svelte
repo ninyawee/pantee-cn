@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { ArrowDown, ArrowUp, CornerDownLeft, SearchIcon } from "@lucide/svelte";
 	import * as Command from "$lib/registry/ui/command/index.js";
 	import { Kbd, KbdGroup } from "$lib/registry/ui/kbd/index.js";
@@ -61,7 +62,7 @@
 		{#each docsNavigation as group}
 			<Command.Group heading={group.title}>
 				{#each group.items as item}
-					<Command.LinkItem href={item.href} value={item.title} onclick={closeDialog}>
+					<Command.LinkItem href="{base}{item.href}" value={item.title} onclick={closeDialog}>
 						<item.icon />
 						<span>{item.title}</span>
 					</Command.LinkItem>

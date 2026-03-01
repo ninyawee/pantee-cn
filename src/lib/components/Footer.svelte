@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { cn } from "$lib/utils";
 	import Button from "$lib/registry/ui/button/button.svelte";
 
@@ -60,7 +61,7 @@
 			</div>
 		</div>
 		<div class="flex items-center">
-			<Button variant="ghost" size="sm" href="/docs">Documentation</Button>
+			<Button variant="ghost" size="sm" href="{base}/docs">Documentation</Button>
 			<Button
 				variant="ghost"
 				size="sm"
