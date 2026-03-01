@@ -1,1 +1,0 @@
-import{B as f,o,C as u,D as _,q as t,F as g,G as i,z as l,y as d,A as p,I as m}from"./DubL5_2t.js";function C(n,r){let s=null,y=t;var a;if(t){s=p;for(var e=m(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=i(e);if(e===null)l(!1);else{var E=i(e);e.remove(),d(E)}}t||(a=document.head.appendChild(f()));try{o(()=>r(a),u|_)}finally{y&&(l(!0),d(s))}}export{C as h};

@@ -1,1 +1,0 @@
-import{a,f as d}from"./C9RuiY6R.js";import{c as n,n as s,r as p}from"./DubL5_2t.js";import{s as m}from"./CabKBMhf.js";var i=d('<div class="bg-muted/30 text-foreground/70 [&amp;_strong]:text-foreground rounded-lg border px-5 py-4 text-[14px] leading-relaxed [&amp;_strong]:font-medium"><!></div>');function x(r,e){var o=i(),t=n(o);m(t,()=>e.children??s),p(o),a(r,o)}export{x as D};
