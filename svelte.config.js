@@ -17,6 +17,7 @@ const config = {
 		prerender: {
 			entries: ["*"],
 			handleMissingId: "warn",
+			handleHttpError: "warn",
 		},
 	},
 	vitePlugin: {
