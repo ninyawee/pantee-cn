@@ -13,8 +13,7 @@
 
 	const advancedUsageFiles = $derived(page.data.advancedUsageFiles);
 	const customLayerFiles = $derived(page.data.customLayerFiles);
-	const layerMarkersSource = $derived(page.data.layerMarkersSource);
-	const layerMarkersHighlighted = $derived(page.data.layerMarkersHighlighted);
+	const layerMarkersFiles = $derived(page.data.layerMarkersFiles);
 
 	const useContextCode = `<script lang="ts">
 	import { Map } from "$lib/components/ui/map";
@@ -119,7 +118,7 @@
 		</p>
 	</DocsSection>
 
-	<ComponentPreview code={layerMarkersSource} highlightedCode={layerMarkersHighlighted}>
+	<ComponentPreview files={layerMarkersFiles}>
 		<LayerMarkersExample />
 	</ComponentPreview>
 

@@ -1,5 +1,5 @@
 import { highlightCode } from "$lib/highlight";
-import { getExampleSource, getExampleSources } from "$lib/examples";
+import { getExampleSources } from "$lib/examples";
 
 export const load = async () => {
 	const advancedUsageSources = getExampleSources(["AdvancedUsageExample", "MapController"]);
@@ -12,8 +12,13 @@ export const load = async () => {
 		customLayerSources.map((file) => highlightCode(file.code, "svelte"))
 	);
 
-	const layerMarkersSource = getExampleSource("LayerMarkersExample");
-	const layerMarkersHighlighted = await highlightCode(layerMarkersSource, "svelte");
+	const layerMarkersSources = getExampleSources([
+		"LayerMarkersExample",
+		"LayerMarkersContent",
+	]);
+	const layerMarkersHighlighted = await Promise.all(
+		layerMarkersSources.map((file) => highlightCode(file.code, "svelte"))
+	);
 
 	return {
 		advancedUsageFiles: advancedUsageSources.map((file, i) => ({
@@ -26,7 +31,10 @@ export const load = async () => {
 			code: file.code,
 			highlightedCode: customLayerHighlighted[i],
 		})),
-		layerMarkersSource,
-		layerMarkersHighlighted,
+		layerMarkersFiles: layerMarkersSources.map((file, i) => ({
+			name: `${file.name}.svelte`,
+			code: file.code,
+			highlightedCode: layerMarkersHighlighted[i],
+		})),
 	};
 };
