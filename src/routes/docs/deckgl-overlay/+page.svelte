@@ -26,7 +26,7 @@
 			from
 			<DocsCode>@svelte-maplibre-gl/deckgl</DocsCode>
 			to render deck.gl layers interleaved with MapLibre GL layers. This example shows animated arcs
-			over 3D extruded buildings in Tokyo.
+			over 3D extruded buildings in Bangkok.
 		</p>
 	</DocsSection>
 

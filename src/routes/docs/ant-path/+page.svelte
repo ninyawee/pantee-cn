@@ -3,7 +3,7 @@
 	import DocsSection from "$lib/components/docs/DocsSection.svelte";
 	import DocsCode from "$lib/components/docs/DocsCode.svelte";
 	import { ComponentPreview } from "$lib/components/docs/preview";
-	import AntPathExample from "$lib/components/docs/preview/examples/AntPathExample.svelte";
+	import AntPathExample from "$lib/components/docs/preview/examples/AntRouteExample.svelte";
 	import { page } from "$app/state";
 
 	const source = $derived(page.data.source);
@@ -24,7 +24,7 @@
 			The ant path effect is created by cycling through a sequence of
 			<DocsCode>line-dasharray</DocsCode>
 			values on each animation frame. A background line provides contrast while the foreground dashes
-			march along the route to indicate direction of travel. Adapted from DMCR Patrol path visualization.
+			march along the route to indicate direction of travel.
 		</p>
 	</DocsSection>
 

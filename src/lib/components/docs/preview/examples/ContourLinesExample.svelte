@@ -16,7 +16,7 @@
 		style="https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json"
 		zoom={12}
 		minZoom={5}
-		center={{ lng: 11.35, lat: 47.3 }}
+		center={{ lng: 98.486, lat: 18.588 }}
 	>
 		<MapLibreContourSource
 			url="https://tiles.mapterhorn.com/{z}/{x}/{y}.webp"

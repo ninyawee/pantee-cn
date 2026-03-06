@@ -2,7 +2,7 @@ import { highlightCode } from "$lib/highlight";
 import { getExampleSource } from "$lib/examples";
 
 export const load = async () => {
-	const source = getExampleSource("AntPathExample");
+	const source = getExampleSource("AntRouteExample");
 
 	return {
 		source,

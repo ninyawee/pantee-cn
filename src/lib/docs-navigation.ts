@@ -14,6 +14,7 @@ import Sparkles from "@lucide/svelte/icons/sparkles";
 import Mountain from "@lucide/svelte/icons/mountain";
 import Pencil from "@lucide/svelte/icons/pencil";
 import Bug from "@lucide/svelte/icons/bug";
+import TreePine from "@lucide/svelte/icons/tree-pine";
 
 export interface NavItem {
 	title: string;
@@ -41,6 +42,7 @@ export const docsNavigation: NavGroup[] = [
 			{ title: "Plain Map", href: "/docs/plain", icon: Map },
 			{ title: "3D Model with Three.js", href: "/docs/threejs-model", icon: Box },
 			{ title: "Ant Path Animation", href: "/docs/ant-path", icon: Bug },
+			{ title: "3D Trail Path", href: "/docs/3d-trail", icon: TreePine },
 		],
 	},
 	{

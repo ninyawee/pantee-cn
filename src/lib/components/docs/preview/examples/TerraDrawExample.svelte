@@ -62,7 +62,7 @@
 		class="h-full w-full"
 		style="https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json"
 		zoom={2}
-		center={{ lng: 60, lat: 20 }}
+		center={{ lng: 100.5, lat: 13.75 }}
 	>
 		<TerraDraw
 			{mode}

@@ -13,10 +13,10 @@
 				const O = (2 * Math.PI) / NUM;
 				const r = (1.3 + Math.sin(t / 510 + i * O)) * 0.002;
 				return {
-					source: [139.7672, 35.6812],
+					source: [100.5231, 13.7237],
 					target: [
-						139.7672 + Math.cos(t / 730 + i * O) * r,
-						35.6812 + Math.sin(t / 730 + i * O) * r,
+						100.5231 + Math.cos(t / 730 + i * O) * r,
+						13.7237 + Math.sin(t / 730 + i * O) * r,
 					],
 				};
 			});
@@ -34,7 +34,7 @@
 		pitch={60}
 		minZoom={4}
 		bearing={-45}
-		center={[139.7672, 35.6812]}
+		center={[100.5231, 13.7237]}
 	>
 		<DeckGLOverlay
 			interleaved
