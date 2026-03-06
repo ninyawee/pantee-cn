@@ -8,6 +8,12 @@ import Route from "@lucide/svelte/icons/route";
 import Settings from "@lucide/svelte/icons/settings";
 import Layers from "@lucide/svelte/icons/layers";
 import Wrench from "@lucide/svelte/icons/wrench";
+import Box from "@lucide/svelte/icons/box";
+import Database from "@lucide/svelte/icons/database";
+import Sparkles from "@lucide/svelte/icons/sparkles";
+import Mountain from "@lucide/svelte/icons/mountain";
+import Pencil from "@lucide/svelte/icons/pencil";
+import Bug from "@lucide/svelte/icons/bug";
 
 export interface NavItem {
 	title: string;
@@ -27,6 +33,23 @@ export const docsNavigation: NavGroup[] = [
 			{ title: "Getting Started", href: "/docs", icon: BookOpen },
 			{ title: "Installation", href: "/docs/installation", icon: Code },
 			{ title: "API Reference", href: "/docs/api-reference", icon: Braces },
+		],
+	},
+	{
+		title: "Examples",
+		items: [
+			{ title: "Plain Map", href: "/docs/plain", icon: Map },
+			{ title: "3D Model with Three.js", href: "/docs/threejs-model", icon: Box },
+			{ title: "Ant Path Animation", href: "/docs/ant-path", icon: Bug },
+		],
+	},
+	{
+		title: "Extensions",
+		items: [
+			{ title: "PMTiles Protocol", href: "/docs/pmtiles", icon: Database },
+			{ title: "deck.gl Overlay", href: "/docs/deckgl-overlay", icon: Sparkles },
+			{ title: "Contour Lines", href: "/docs/contour-lines", icon: Mountain },
+			{ title: "Terra Draw", href: "/docs/terra-draw", icon: Pencil },
 		],
 	},
 	{
