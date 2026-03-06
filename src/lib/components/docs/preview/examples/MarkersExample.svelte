@@ -10,27 +10,27 @@
 	const locations = [
 		{
 			id: 1,
-			name: "Empire State Building",
-			lng: -73.9857,
-			lat: 40.7484,
+			name: "Grand Palace",
+			lng: 100.4914,
+			lat: 13.7500,
 		},
 		{
 			id: 2,
-			name: "Central Park",
-			lng: -73.9654,
-			lat: 40.7829,
+			name: "Wat Arun",
+			lng: 100.4889,
+			lat: 13.7437,
 		},
 		{
 			id: 3,
-			name: "Times Square",
-			lng: -73.9855,
-			lat: 40.758,
+			name: "Wat Pho",
+			lng: 100.4933,
+			lat: 13.7465,
 		},
 	];
 </script>
 
 <div class="h-[400px] w-full">
-	<Map center={[-73.98, 40.76]} zoom={12}>
+	<Map center={[100.491, 13.747]} zoom={15}>
 		{#each locations as location (location.id)}
 			<MapMarker longitude={location.lng} latitude={location.lat}>
 				<MarkerContent>

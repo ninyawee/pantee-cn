@@ -8,6 +8,7 @@ export { default as MapControls } from "./MapControls.svelte";
 export { default as MapPopup } from "./MapPopup.svelte";
 export { default as MapRoute } from "./MapRoute.svelte";
 export { default as MapClusterLayer } from "./MapClusterLayer.svelte";
+export { default as MapAntRoute } from "./MapAntRoute.svelte";
 
 // Re-export useful utilities from svelte-maplibre-gl
 export { getMapContext, getMarkerContext } from "svelte-maplibre-gl";

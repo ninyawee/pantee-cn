@@ -10,7 +10,7 @@
 	}
 
 	let viewport = $state<MapViewport>({
-		center: [-74.006, 40.7128],
+		center: [100.5018, 13.7563],
 		zoom: 8,
 		bearing: 0,
 		pitch: 0,

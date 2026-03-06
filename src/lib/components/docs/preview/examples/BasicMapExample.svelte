@@ -3,5 +3,5 @@
 </script>
 
 <div class="h-[400px] w-full">
-	<Map center={[-74.006, 40.7128]} zoom={12} />
+	<Map center={[100.5018, 13.7563]} zoom={12} />
 </div>

@@ -4,10 +4,11 @@
 	import DocsCode from "$lib/components/docs/DocsCode.svelte";
 	import { ComponentPreview } from "$lib/components/docs/preview";
 	import DeckGLOverlayExample from "$lib/components/docs/preview/examples/DeckGLOverlayExample.svelte";
+	import DeckGLAccidentExample from "$lib/components/docs/preview/examples/DeckGLAccidentExample.svelte";
 	import { page } from "$app/state";
 
-	const source = $derived(page.data.source);
-	const highlighted = $derived(page.data.highlighted);
+	const sources = $derived(page.data.sources);
+	const highlighteds = $derived(page.data.highlighteds);
 </script>
 
 <svelte:head>
@@ -30,7 +31,24 @@
 		</p>
 	</DocsSection>
 
-	<ComponentPreview code={source} highlightedCode={highlighted}>
+	<ComponentPreview code={sources.arc} highlightedCode={highlighteds.arc}>
 		<DeckGLOverlayExample />
+	</ComponentPreview>
+
+	<DocsSection title="Road Accident Visualization">
+		<p>
+			A <DocsCode>ScatterplotLayer</DocsCode> showing 2022 road accident data from the
+			<a
+				href="https://gdcatalog.go.th/dataset/gdpublish-arms-accident"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-primary underline hover:no-underline">Department of Rural Roads (ทช.)</a
+			>. Point size and color indicate severity: red for fatalities, orange for severe injuries,
+			yellow for minor injuries. Hover to see details.
+		</p>
+	</DocsSection>
+
+	<ComponentPreview code={sources.accident} highlightedCode={highlighteds.accident}>
+		<DeckGLAccidentExample />
 	</ComponentPreview>
 </DocsLayout>

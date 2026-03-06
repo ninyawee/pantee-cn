@@ -7,45 +7,45 @@
 	const places = [
 		{
 			id: 1,
-			name: "The Metropolitan Museum of Art",
-			label: "Museum",
-			category: "Museum",
+			name: "Wat Phra Kaew",
+			label: "Temple",
+			category: "Temple",
 			rating: 4.8,
-			reviews: 12453,
-			hours: "10:00 AM - 5:00 PM",
-			image: "https://images.unsplash.com/photo-1575223970966-76ae61ee7838?w=300&h=200&fit=crop",
-			lng: -73.9632,
-			lat: 40.7794,
+			reviews: 15234,
+			hours: "8:30 AM - 3:30 PM",
+			image: "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=300&h=200&fit=crop",
+			lng: 100.4914,
+			lat: 13.7516,
 		},
 		{
 			id: 2,
-			name: "Brooklyn Bridge",
+			name: "Wat Arun",
 			label: "Landmark",
 			category: "Landmark",
 			rating: 4.9,
-			reviews: 8234,
-			hours: "Open 24 hours",
-			image: "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?w=300&h=200&fit=crop",
-			lng: -73.9969,
-			lat: 40.7061,
+			reviews: 9876,
+			hours: "8:00 AM - 6:00 PM",
+			image: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=300&h=200&fit=crop",
+			lng: 100.4889,
+			lat: 13.7437,
 		},
 		{
 			id: 3,
-			name: "Grand Central Terminal",
-			label: "Transit",
-			category: "Transit",
+			name: "Chatuchak Weekend Market",
+			label: "Market",
+			category: "Market",
 			rating: 4.7,
-			reviews: 5621,
-			hours: "5:15 AM - 2:00 AM",
-			image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=300&h=200&fit=crop",
-			lng: -73.9772,
-			lat: 40.7527,
+			reviews: 7321,
+			hours: "9:00 AM - 6:00 PM",
+			image: "https://images.unsplash.com/photo-1533050487297-09b450131914?w=300&h=200&fit=crop",
+			lng: 100.5508,
+			lat: 13.7999,
 		},
 	];
 </script>
 
 <div class="h-125 w-full">
-	<Map center={[-73.98, 40.74]} zoom={11}>
+	<Map center={[100.51, 13.77]} zoom={11}>
 		{#each places as place (place.id)}
 			<MapMarker longitude={place.lng} latitude={place.lat}>
 				<MarkerContent>

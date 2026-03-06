@@ -3,8 +3,8 @@
 	import MapPin from "@lucide/svelte/icons/map-pin";
 
 	let markerPosition = $state({
-		lng: -73.98,
-		lat: 40.75,
+		lng: 100.5018,
+		lat: 13.7563,
 	});
 
 	function handleDragEnd(e: { lng: number; lat: number }) {
@@ -13,7 +13,7 @@
 </script>
 
 <div class="h-100 w-full">
-	<Map center={[-73.98, 40.75]} zoom={12}>
+	<Map center={[100.5018, 13.7563]} zoom={12}>
 		<MapMarker
 			longitude={markerPosition.lng}
 			latitude={markerPosition.lat}

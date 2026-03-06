@@ -6,12 +6,15 @@
 	import { ComponentPreview } from "$lib/components/docs/preview";
 	import RouteExample from "$lib/components/docs/preview/examples/RouteExample.svelte";
 	import OsrmRouteExample from "$lib/components/docs/preview/examples/OsrmRouteExample.svelte";
+	import AntRouteExample from "$lib/components/docs/preview/examples/AntRouteExample.svelte";
 	import { page } from "$app/state";
 
 	const routeSource = $derived(page.data.routeSource);
 	const routeHighlighted = $derived(page.data.routeHighlighted);
 	const osrmRouteSource = $derived(page.data.osrmRouteSource);
 	const osrmRouteHighlighted = $derived(page.data.osrmRouteHighlighted);
+	const antRouteSource = $derived(page.data.antRouteSource);
+	const antRouteHighlighted = $derived(page.data.antRouteHighlighted);
 </script>
 
 <svelte:head>
@@ -51,5 +54,25 @@
 
 	<ComponentPreview code={osrmRouteSource} highlightedCode={osrmRouteHighlighted} class="h-125">
 		<OsrmRouteExample />
+	</ComponentPreview>
+
+	<DocsSection title="Animated Ant Route">
+		<p>
+			Use <DocsCode>MapAntRoute</DocsCode> to draw animated "marching ants" paths. The animation
+			cycles through <DocsCode>line-dasharray</DocsCode> frames using
+			<DocsCode>requestAnimationFrame</DocsCode> for smooth motion.
+		</p>
+		<p class="mt-2">
+			Props: <DocsCode>coordinates</DocsCode> (required),
+			<DocsCode>color</DocsCode>, <DocsCode>bgColor</DocsCode>,
+			<DocsCode>width</DocsCode>, <DocsCode>bgWidth</DocsCode>,
+			<DocsCode>speed</DocsCode> (0–1 scale),
+			<DocsCode>dashLength</DocsCode>, <DocsCode>gapLength</DocsCode>,
+			<DocsCode>paused</DocsCode>.
+		</p>
+	</DocsSection>
+
+	<ComponentPreview code={antRouteSource} highlightedCode={antRouteHighlighted}>
+		<AntRouteExample />
 	</ComponentPreview>
 </DocsLayout>

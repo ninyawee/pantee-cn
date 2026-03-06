@@ -6,11 +6,11 @@
 </script>
 
 <div class="relative h-[400px] w-full">
-	<Map center={[-74.006, 40.7128]} zoom={13}>
+	<Map center={[100.5018, 13.7563]} zoom={13}>
 		{#if showPopup}
 			<MapPopup
-				longitude={-74.006}
-				latitude={40.7128}
+				longitude={100.5018}
+				latitude={13.7563}
 				closeButton
 				focusAfterOpen={false}
 				closeOnClick={false}
@@ -18,9 +18,9 @@
 				class="w-62"
 			>
 				<div class="space-y-2">
-					<h3 class="text-foreground font-semibold">New York City</h3>
+					<h3 class="text-foreground font-semibold">Bangkok</h3>
 					<p class="text-muted-foreground text-sm">
-						The city that never sleeps. Population: 8.3 million
+						The City of Angels. Population: 10.7 million
 					</p>
 					<Button size="sm" variant="outline" class="w-full" onclick={() => (showPopup = false)}>
 						Close

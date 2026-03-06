@@ -3,8 +3,8 @@
 	import { Loader2, Clock, Route } from "@lucide/svelte";
 	import { Button } from "$lib/registry/ui/button/index";
 
-	const start = { name: "Amsterdam", lng: 4.9041, lat: 52.3676 };
-	const end = { name: "Rotterdam", lng: 4.4777, lat: 51.9244 };
+	const start = { name: "Bangkok", lng: 100.5018, lat: 13.7563 };
+	const end = { name: "Pattaya", lng: 100.8825, lat: 12.9236 };
 
 	interface RouteData {
 		coordinates: [number, number][];
@@ -65,7 +65,7 @@
 </script>
 
 <div class="relative h-125 w-full">
-	<Map center={[4.69, 52.14]} zoom={8.5}>
+	<Map center={[100.69, 13.34]} zoom={8.5}>
 		{#each routesWithIndex as { route, index } (index)}
 			{@const isSelected = index === selectedIndex}
 			<MapRoute

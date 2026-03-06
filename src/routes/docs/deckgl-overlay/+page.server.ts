@@ -2,10 +2,14 @@ import { highlightCode } from "$lib/highlight";
 import { getExampleSource } from "$lib/examples";
 
 export const load = async () => {
-	const source = getExampleSource("DeckGLOverlayExample");
+	const arcSource = getExampleSource("DeckGLOverlayExample");
+	const accidentSource = getExampleSource("DeckGLAccidentExample");
 
 	return {
-		source,
-		highlighted: await highlightCode(source, "svelte"),
+		sources: { arc: arcSource, accident: accidentSource },
+		highlighteds: {
+			arc: await highlightCode(arcSource, "svelte"),
+			accident: await highlightCode(accidentSource, "svelte"),
+		},
 	};
 };
